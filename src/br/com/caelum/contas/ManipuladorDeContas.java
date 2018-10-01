@@ -35,5 +35,4 @@ public class ManipuladorDeContas {
 		Conta destino = (Conta)evento.getSelecionadoNoCombo("destino");
 		conta.transfere(evento.getDouble("valorTransferencia"), destino);
 	}
-	
 }

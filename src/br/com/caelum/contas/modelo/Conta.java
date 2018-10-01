@@ -12,7 +12,7 @@ public class Conta {
 	private static int geradorDeIdentificacao;
 	
 	private int identificacao;
-	protected double saldo;
+	private double saldo;
 	private String titular;
 	private int numero;
 	private String agencia;
