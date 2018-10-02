@@ -7,7 +7,7 @@ package br.com.caelum.contas.modelo;
  * @author Eduardo Almeida
  * 
  */
-public class Conta {
+public abstract class Conta {
 	
 	private static int geradorDeIdentificacao;
 	
@@ -84,7 +84,5 @@ public class Conta {
 		return this.getTipo() + "("+getTitular()+")";
 	}
 
-	public String getTipo() {
-		return "Conta";
-	}
+	public abstract String getTipo();
 }
