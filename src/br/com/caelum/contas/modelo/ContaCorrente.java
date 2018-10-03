@@ -11,7 +11,14 @@ public class ContaCorrente extends Conta implements Tributavel {
 	 */
 	@Override
 	public void saca(double valor) {
-		super.saca((valor + 0.10));
+		if(valor < 0){
+			throw new IllegalArgumentException("Você tentou sacar um valor negativo");
+		}
+		valor += 0.10;
+		if(this.getSaldo() < valor) {
+			throw new SaldoInsuficienteException(valor);
+		}
+		super.saca(valor);
 	}
 
 	@Override

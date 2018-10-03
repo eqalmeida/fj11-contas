@@ -31,6 +31,9 @@ public abstract class Conta {
 	 * @param valor Valor a ser depositado.
 	 */
 	public void deposita(double valor) {
+		if(valor < 0) {
+			throw new IllegalArgumentException("Você tentou depositar um valor negativo");
+		}
 		this.saldo += valor;
 	}
 	
@@ -39,6 +42,9 @@ public abstract class Conta {
 	 * @param valor
 	 */
 	public void saca(double valor) {
+		if(valor < 0) {
+			throw new IllegalArgumentException("Você tentou sacar um valor negativo");
+		}
 		this.saldo -= valor;
 	}
 	
