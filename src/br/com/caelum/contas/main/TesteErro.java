@@ -5,9 +5,12 @@ import br.com.caelum.contas.modelo.ContaCorrente;
 public class TesteErro {
 
 	public static void main(String[] args) {
-		System.out.println("Inicio do main");
-		metodo1();
-		System.out.println("fim do main");
+		
+		System.out.println( "x" +1+2);
+		
+		//System.out.println("Inicio do main");
+		//metodo1();
+		//System.out.println("fim do main");
 	}
 
 	static void metodo1() {
